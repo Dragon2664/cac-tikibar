@@ -1,0 +1,89 @@
+/* Linea para la animación que usa animate.style como referencia  
+la que empieza con .referencia es para una parametrizacion, la que empieza
+con .root es para todas las animaciones del diseño
+*/
+.tiempo {
+    --animate-duration: 50s;
+}
+
+.icoredsoc {
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+    height: 50px;
+}
+
+/* las siguientes lineas es para hacer un menu responsive */
+
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+  
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+nav ul li {
+    flex-grow: 1;
+    margin: 0;
+}
+  
+  nav ul li a {
+    box-sizing: border-box;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+  
+@media only screen and (max-width: 768px) {
+    nav ul li {
+      width: 100%;
+    }
+  
+    nav ul li a {
+      padding: 0;
+      font-size: 16px;
+    }
+}
+
+  /* parametros para las imagenes de la cabecera */
+
+.imgcabecera {
+    position: relative;
+}
+  
+.superpuesta {
+    position: absolute; /* queda fija en ese lugar dentro de la pag*/
+    padding: 6%;
+    top: 0;
+    opacity: 1; /* para ajustar la transparencia de la imagen superpuesta */
+}
+
+.txtsuperpuesto, .titu1, .titu2{
+    display: inline-block;
+    position: absolute; 
+    color: yellowgreen;
+    bottom: 0;
+    opacity: 1; 
+}
+.titu1 {
+    right: 0;
+
+}
+.titu3 {
+    right: 0;
+ 
+}
+ 
