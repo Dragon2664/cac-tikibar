@@ -6,6 +6,5 @@ Este proyecto es del grupo 18 integrado por:
 
 * Maria Alejandra de Robles
 * Pablo Faggionato
-* Leonardo Valdebenito
 * Claudio Rubén Miranda
 * 
