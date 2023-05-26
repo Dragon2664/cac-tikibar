@@ -1,0 +1,149 @@
+/* Linea para la animación que usa animate.style como referencia  
+la que empieza con .referencia es para una parametrizacion, la que empieza
+con .root es para todas las animaciones del diseño
+*/
+
+.tiempo {
+    --animate-duration: 50s;
+}
+
+/* seteo de las iconos que hacen referecia a las redes sociales*/
+.icoredsoc {
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+    height: 50px;
+}
+
+/* las siguientes lineas es para hacer un menu responsive */
+
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+  
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+nav ul li {
+    flex-grow: 1;
+    margin: 0;
+}
+  
+  nav ul li a {
+    box-sizing: border-box;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+  
+@media only screen and (max-width: 768px) {
+    nav ul li {
+      width: 100%;
+    }
+  
+    nav ul li a {
+      padding: 10;
+      font-size: 45x;
+    }
+}
+
+/* parametros para los datos de la cabecera de la web */
+
+/* imágen de la cabecera */
+.imgcabecera {
+    background-image: url("/cac-tikibar/images/serfer1atardecer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 80vh;
+
+}
+
+.superpuesta {
+    background-image: url("/cac-tikibar/images/Logo.jpg");
+    background-repeat: no-repeat;
+    position: absolute;
+    /* margin define: top - right - botton - left */
+    margin: 50px 0px 0px 15px ;
+    opacity: 1;
+    max-width: 50vw;
+    width: 20% ;
+    height: 40% ;
+}
+
+
+.superpuesta_Oritinal {
+    position: absolute; /* queda fija en ese lugar dentro de la pag*/
+    padding: 6%;
+    top: 40%;
+    left: 17%;
+    opacity: 1; /* para ajustar la transparencia de la imagen superpuesta */
+    transform: translate(-50%, -50%);
+    max-width: 30%; 
+    height: auto; /* Permite que la altura se ajuste automáticamente en proporción */
+
+}
+
+
+.txtsuperpuesto, .titu1, .titu2{
+    display: inline-block;
+    position: absolute; 
+    color: yellowgreen;
+    margin-top: 20px;
+
+    bottom: 0;
+    opacity: 1; 
+}
+.titu1 {
+    right: 1%;
+    padding: 10%;
+    font-size: 70px;
+
+}
+.titu3 {
+    right: 2%;
+    padding: 0%;
+ 
+}
+
+.parraT2 {
+    font-family: Tahoma;
+    font-size: 14px;
+    color: #477b29;
+}
+
+/* color de fondo de la pagina */
+.colorfondopag {
+    background-color: #e19a24;
+  }
+
+
+/* select, card e img utilizadas para parametrizar imagenes y textos de la pagina recetas */
+select,label,button{
+    margin: 10px ;
+}
+.card{
+    width: 300px;
+    margin:10px 0;
+}
+img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+

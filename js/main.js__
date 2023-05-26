@@ -1,0 +1,113 @@
+const { createApp } = Vue  //creo un objeto VUE llamdo createApp
+ createApp({
+   data() {
+     return {
+       url: 'tragos.json',
+       todoslostragos: [],  /*  Aqui guardo todos los tragos, sin filtros*/
+       filtrolostragos: [],  /*  arreglo que guarda los tragos fitrados, este es el que se muestra por html */
+    
+       conysin:[],  
+       dificult: [],  
+       
+
+       valcohol: "Sin filtro", /* Variable para filtrar con o sin alcohol */ 
+       vdificultad: "Sin filtro", /* Variable para filtrar por grado de dificultad */
+
+     }
+   },
+   methods: {
+     fetchData(url) {  // necesite un async y await porque seguia de largo y no me cargaba el array recipes ni las listas desplegables
+       fetch(url) 
+         .then(response => response.json()) 
+         .then(data => {
+           console.log(data)
+           this.filtrolostragos=data
+           this.todoslostragos=data
+           this.pullDownLista()
+         })
+         .catch(error=>alert("Mis diculupas, se ha producido un error interno, código de error: "+ error))
+     },
+    
+     filtro() {
+
+       this.filtrolostragos = this.todoslostragos.filter( 
+       (elemento.alcohol == this.alcohol || this.alcohol==="Sin filtro") && 
+       (elemento.dificultad == this.sificultad || this.curso==="Sin filtro" ))
+     
+     },
+     orden() {
+       this.fltrolostragos.sort((a, b) => { return (a.title > b.title ? 1 : -1) } )
+       /* si retorna 1 lo invierte, si retorna -1 lo deja como esta */
+
+     },
+     pullDownLista() {
+       this.conysin =[]
+       this.dificult = []
+       for (elemento of this.todoslostragos) {
+         if (elemento.conysin !== '' && this.alcohol.indexOf(elemento.cuisine) < 0) {
+           this.alcohol.push(elemento.alcohol)
+         }
+         if (elemento.alcohol !== '' && this.conysin.indexOf(elemento.course) < 0) {
+           this.conysin.push(elemento.alcohol)
+         }
+        }
+        
+
+
+     }
+   },
+   created() {
+     this.fetchData(this.url)                                                       
+   }
+ }).mount('#app')
+
+
+ const { createApp } = Vue;
+
+createApp({
+  data() {
+    return {
+      url: 'URL_DEL_JSON', // Reemplaza 'URL_DEL_JSON' con la URL de tu archivo JSON de tragos
+      todoslostragos: [], // Nuevo nombre para el arreglo completo de tragos
+      tragosfiltrados: [], // Nuevo nombre para el arreglo filtrado de tragos
+      conysin: [], // Nuevo arreglo para opciones de con/sin alcohol
+      dificult: [], // Nuevo arreglo para opciones de dificultad
+      conysinSeleccionado: 'all', // Nuevo valor inicial para filtrar por con/sin alcohol
+      dificultSeleccionado: 'all', // Nuevo valor inicial para filtrar por dificultad
+    };
+  },
+  methods: {
+    fetchData(url) {
+      fetch(url)
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data);
+          this.todoslostragos = data.tragos; // Reemplaza 'tragos' con el nombre del arreglo en tu archivo JSON
+          this.filtrarTragos();
+          this.pullDownLista();
+        })
+        .catch((error) => alert('Ups... se produjo un error: ' + error));
+    },
+    filtrarTragos() {
+      this.tragosfiltrados = this.todoslostragos.filter((elemento) => (
+        (this.conysinSeleccionado === 'all' || elemento.conysin === this.conysinSeleccionado) &&
+        (this.dificultSeleccionado === 'all' || elemento.dificult === this.dificultSeleccionado)
+      ));
+    },
+    pullDownLista() {
+      this.conysin = [];
+      this.dificult = [];
+      for (elemento of this.todoslostragos) {
+        if (elemento.conysin !== '' && !this.conysin.includes(elemento.conysin)) {
+          this.conysin.push(elemento.conysin);
+        }
+        if (elemento.dificult !== '' && !this.dificult.includes(elemento.dificult)) {
+          this.dificult.push(elemento.dificult);
+        }
+      }
+    },
+  },
+  created() {
+    this.fetchData(this.url);
+  },
+}).mount('#app');

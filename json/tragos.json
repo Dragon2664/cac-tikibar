@@ -1,0 +1,196 @@
+{ "tragos":
+    [ 
+        {
+        "nombre": "Bloody Mary",
+        "historia":"El Bloody Mary es uno de los cócteles más populares de todos los tiempos. No es seguro que fuera exactamente así, pero parece ser que fue un barman llamado Fernand Petiot, quien inventó este combinado en el Harry’s New York Bar de París en 1920, mezclando a partes iguales vodka y zumo de tomate. Posteriormente, cuando Petiot se trasladó a los Estados Unidos como jefe del Bar King Cole en el Hotel Saint Regis de Nueva York, cambió la fórmula refinando el cóctel, añadiendo sal y pimienta, zumo de limón, y toques de salsa Worthestershire (Perrins) y unas gotas de salsa Tabasco rojo.",
+        "alcohol": "Si",
+        "foto": "url",
+        "ingredientes" : 
+            [ 
+                {  
+                "bebida":"Vodka",
+                "cantidad":" 70 ml"
+                },
+                {
+                "bebida":"Zumo de tomate",
+                "cantidad":"210ml"
+                },    
+                {
+                "bebida":"Zumo de limon",
+                "cantidad":"2 gotas"
+                },    
+                {
+                "bebida": "Salsa Worcestershire",
+                "cantidad":"3 gotas"
+                },    
+                {
+                "bebida": "Pimienta negra molida",
+                "cantidad":"A Gusto"
+                },    
+                {
+                "bebida": "Apio",
+                "cantidad":"1 Ramita"
+                }
+            ],
+        "preparacion": "A la hora de condimentar este cóctel, es fundamental un buen toque de salsa Perrins, muy poco Tabasco (dos gotas) para no pasarnos de picante agresivo y dos o tres vueltas de pimienta negra que completarán el efecto picante, para que quede en su punto. Opcionalmente se puede añadir un chorrito de caldo concentrado de carne para potenciar el sabor. Agregamos también el zumo de limón, aproximadamente 15 ml y agitamos con un cubo de hielo para mezclar bien y enfriar. Continuamos con el vodka, utilizando la medida del jigger pequeño o grande, en función de la proporción de alcohol que se desee incorporar. Lo habitual es utilizar una tercera parte de la cantidad de zumo de tomate que se vaya a usar. Para 210 ml de tomate, utilizaremos 70 ml de vodka y la proporción quedará en su punto. No obstante, con la experiencia de Kike el lo hace a ojo (y lo clava). Para incorporar el apio y la sal, el barman nos recomienda utilizar sal de apio, que aporta el inconfundible sabor de la hortaliza, sin saturar (evitando de paso que su sabor nos pueda repetir). Además así incorporamos el toque salado. No obstante, para terminar la preparación, vamos a meter una ramita de apio dentro del vaso dejando que asome por fuera que servirá para remover nuestro Bloody Mary, como si fuera una cucharilla. Ya sólo falta el zumo de tomate y agitar para que esté en su punto. El barman de Soda 917 nos recomienda airear bien el Bloody Mary, lanzándolo desde la coctelera al vaso dos o tres veces para terminar sirviéndolo en la copa, finalizando con la ramita de apio fresco. En caso de añadir hielo, hay que hacerlo al terminar de servir, sin echar más de dos cubitos para que nuestro Bloody Mary no quede aguado. ",
+        "dificultad":"3/10"
+    },
+    {
+        "nombre": "Negroni",
+        "historia": "El Negroni es uno de los más legendarios cócteles de aperitivo. Cuenta la historia, de origen discutido, que el conde Camillo Negroni era un gran aficionado al Americano, un cóctel famoso en toda la mitad norte de Italia formado por Campari, vermut y soda. Un día, cansado de tomar siempre lo mismo, pidió al barman del Caffè Casoni, en Florencia, que cambiara la soda por ginebra, una bebida que acababa de conocer en un reciente viaje a Londres. Creó así uno de los cócteles más famosos y versátiles de todos los tiempos.",
+        "alcohol": "Si",
+        "foto": "url",
+        "ingredientes" : 
+            [ 
+                {  
+                "bebida":"Campari",
+                "cantidad":"300 ml"
+                },
+                {
+                "bebida":"Vermu rojo",
+                "cantidad":"300 ml"
+                },
+                {
+                "bebida":"Ginebra",
+                "cantidad":"300 ml"
+                },
+                {
+                "bebida": "Jugo de Naranja",
+                "cantidad":"a gusto"
+                }
+            ],
+        "preparacion": "el Negroni se sirve igual que el Americano, en hielo, preferiblemente en vaso bajo y ancho y con una cáscara de naranja. Aunque veáis en algunos sitios hacerlo con coctelera, es un cóctel que, tradicionalmente, se mezcla directamente en vaso. Para armarlo solo debemos llenar el vaso de hielo y, con ayuda de un jigger, verter una parte de Campari, una de vermú rojo y una de ginebra, de 30 cl cada una. Se remueve bien con una cuchara y se termina con un twist de naranja",
+        "dificultad":"Media"
+        },
+        {
+        "nombre": "Johnnie Collins Highball",
+        "historia": "a completar",
+        "alcohol": "Si",
+        "foto": "a completar",
+        "ingredientes" : 
+            [ 
+                {  
+                "bebida": "Johnnie Walker Black Label",
+                "cantidad": "45 ml"
+                },
+                {  
+                "bebida": "Jugo de Limón",
+                "cantidad": "20 ml"
+                },
+                {  
+                "bebida": "Almibar simple",
+                "cantidad": "20 ml"
+                },
+                {  
+                "bebida": "Soda",
+                "cantidad": "80 ml"
+                },
+                {
+                "bebida": "Garnish: Fruta de estación",
+                "cantidad": "A Elección"
+                }
+            ],
+        "preparacion": "En un vaso highball (alto), agregar el Johnnie Walker Black Label, el jugo de limón y el almíbar. Mezclar con una cuchara larga, agregar mucho hielo y rellenar el vaso con soda. Decorar con un gajito de fruta: higo, manzana, pera, frutos rojos (arándanos, frambuesas, moras); otra opción es agregar una rodaja de cítrico (limón, naranja) para el toque final. Para el almíbar: calentar 100 ml de agua sin que hierva, agregar 100 gr de azúcar y revolver hasta que se disuelva. Dejarlo reposar en la heladera para que baje su temperatura.   El Garnish, referencia al acompañamiento decorativo en la presentación de un plato o de un cocktail. Entonces el objetivo de ornamentar es potenciar el atractivo visual de nuestro producto y resaltar los colores, aromas y sabores. Este arte, también llamado Muki Mono, se originó durante la dinastía Tang en el siglo VII. A partir de allí, se comenzó a practicar la decoración con frutas y verduras y hasta incluso se comenzaron a elaborar esculturas con ambas en todo el mundo.",
+        "dificultad": "4/10"
+        },
+        {
+        "nombre": "Mojito",
+        "historia": "La Habana en Cuba, es el sitio en el cual nace el mojito, pero circulan diversas explicaciones sobre el origen de su nombre. Según una, se dice que el nombre se deriva de la palabra de África occidental mojo, una bolsa de tela con especias mágicas y objetos mágicos; como una forma diminuta (trivializante) de esta palabra prestada, mojito significaría pequeña magia. También hay una mezcla de especias del mismo nombre, de la que podría provenir el nombre, sin embargo, este mojo en realidad se prepara con pomeranzen, no con limas. La palabra también podría derivarse del español mojar (mojado) y representar un acortamiento del adjetivo mojadito (ligeramente mojado) o mojado (mojado). En la década de 1860, la producción de ron ya era mucho más refinada y se añejaba, lo que daba un ron de mejor calidad. Este sustituyó al aguardiente y lo que ya en Cuba se conocía como draquecito se rebautizó como mojito, antes aún de alcanzar su popularidad gracias a Ernest Hemingway quien lo bebía diariamente en La Bodeguita del Medio y donde primero se empezó a comercializar. ",
+        "alcohol": "Si",
+        "foto": "a completar",
+        "ingredientes" : 
+            [ 
+                {  
+                "bebida": "Zuma de lima",
+                "cantidad": "25 ml"
+                },
+                {
+                "bebida": "Azucar blanco o monreno",
+                "cantidad": "2 cucharadas"
+                },    
+                {
+                "bebida": "Hierbabuena o Menta",
+                "cantidad": "2 hojas"
+                },        
+                {
+                "bebida": "Hielo picado, pilé o de coctail",
+                "cantidad": "A Gusto"
+                },        
+                {
+                "bebida": "Ron Blanco (cubano de preferencia",
+                "cantidad": "60 ml"
+                },        
+                {
+                "bebida": "Agua gasificada",
+                "cantidad": "1 Chorrito"
+                },        
+                {
+                "bebida": "Angostura",
+                "cantidad": "Unas gotas"
+                },        
+                {
+                "bebida": "Rama de Menta y Rodaja de lima",
+                "cantidad": "Para decoracion"
+                }      
+                    
+            ],
+        "preparacion": "Para preparar el mojito vamos a comenzar tomando media lima, si la usamos entera, y la cortamos en cuatro trozos. Luego tomamos un vaso ancho y alto de aproximadamente 300 ml de capacidad y comenzamos añadiendo los ingredientes. Primero va el azúcar, que puede ser blanco o moreno, de la cual pondremos 2 cucharaditas. Continuamos con la hierbabuena, o la menta en su defecto. Hay quien le gusta añadir los tallos y hay quien prefiere solo las hojas. Nos quedamos con lo segundo, pues la elaboración es más fácil, dejando el tallo completo para decorar. Metemos en el vaso unas 10 hojas de hierbabuena o menta. Después le toca el turno a la lima, si la usamos entera ponemos los 4 trozos de lima previamente cortados dentro del vaso. También se puede usar solo el zumo de lima para lo cual pondremos unos 25 ml. Acto seguido llega la parte más importante de la preparación, pues tenemos que macerar estos tres ingredientes. La técnica es muy sencilla pues simplemente hay que machacar suavemente los ingredientes del vaso con un pilón, con ello conseguimos sacar el zumo de la lima a la vez que frotamos las hojas de hierbabuena con el azúcar para que libere sus aceites esenciales. Ojo, no se trata de convertir la hierba en una pasta, deben quedar las hojas más bien enteras. Una vez que notemos un intenso aroma a hierbabuena, lo que haremos será llenar el vaso de hielo picado, también llamado pilé o de cóctel, casi hasta arriba. Lo siguiente que añadiremos será el ron. Normalmente se utiliza un ron blanco, de preferencia cubano, tanto en versiones secas como envejecidas. Usa el que más te guste. La cantidad estándar es lo que se conoce como dos medidas, es decir, 60 ml. A partir de ahí ajusta el punto a tu gusto. En este punto vamos a coger una cuchara y mezclamos muy bien para disolver el resto del azúcar en el alcohol. Ya solo nos queda incorporar un chorrito de agua con gas o soda y, si se desea, un toque de angostura que le dará un puntito amargo. Al terminar, si ha bajado mucho el hielo, añadimos un poco más, le damos un último meneo con la cuchara y ya estaría listo. Para presentarlo, lo podemos decorar con una rodaja de lima y una rama de hierbabuena o menta. Servimos y degustamos enseguida junto con dos pajitas si se desea.",
+        "dificultad": "2/10"
+        },
+        {
+        "nombre": "Shirley Temple",
+        "historia": "El trago Shirley Temple es un cóctel sin alcohol que se originó en la década de 1930. Fue nombrado en honor a la famosa actriz infantil Shirley Temple, quien alcanzó gran popularidad en esa época. La historia cuenta que el trago fue creado en el restaurante Brown Derby en Hollywood, California. Según la leyenda, mientras Shirley Temple estaba cenando allí con sus padres, el barman del restaurante, inspirado por su fama y popularidad, decidió crear una bebida especial para ella que fuera colorida y sin alcohol",
+        "alcohol": "No",
+        "foto": "a completar",
+        "ingredientes" : 
+            [ 
+                {  
+                "bebida": "Ginger Ale o refresco de jengibre",
+                "cantidad": "45 ml"
+                },
+                {  
+                "bebida": "Jugo de Lima o de Limón",
+                "cantidad": "15 ml"
+                },                
+                {  
+                "bebida": "Granadina",
+                "cantidad": "15 ml"
+                },                
+                {  
+                "bebida": "Hielo",
+                "cantidad": "15 ml"
+                },                
+                {
+                "bebida": "Cereza la marrasquino",
+                "cantidad": "1"
+                }
+            ],
+        "preparacion": "Llenar un vaso alto con hielo. Vertir el ginger ale o refresco de jengibre en el vaso. Agregar el jugo de lima o limón al vaso. Añadir la granadina para darle el color rosado característico al trago. Remover suavemente los ingredientes con una cucharilla de bar o una pajita. Decorar el trago colocando una cereza al marrasquino en la parte superior. Servir. Recuerdar que las proporciones pueden ajustarse según tus preferencias personales. Si se desea un sabor más intenso a lima o limón, se puede agregar un poco más de jugo. Del mismo modo, si se prefiere que el trago sea más dulce, se puede agregar un poco más de granadina",
+        "dificultad": "1/10"
+        },
+        {
+            "nombre": "a completar",
+            "historia": "a completar",
+            "alcohol": "a completar",
+            "foto": "a completar",
+            "ingredientes" : 
+                [ 
+                    {  
+                    "bebida": "a completar",
+                    "cantidad": "a completar"
+                    },
+                    {
+                    "bebida": "a completar",
+                    "cantidad": "a completar"
+                    }
+                ],
+            "preparacion": "a completar",
+            "dificultad": "a completar"
+            }
+    
+    
+    ]
+ 
+}
+
+
