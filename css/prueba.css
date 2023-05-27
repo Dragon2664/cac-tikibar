@@ -1,0 +1,9 @@
+.card-text {
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-text h4 {
+    margin-right: 5px;
+  }
+  

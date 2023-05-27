@@ -1,8 +1,10 @@
 # cac-tikibar
-Bar Tiki-Bar de Codo a Codo Group
+Bar Tiki-Bar 
+Trabajo realizado por los abajo mencionados y que 
+conforman el Grupo 18 de Codo a Codo Group Año 2023
+Comision 23020
 
-Proyecto de trabajo para el curso de Codo a Codo Python Front-End
-Este proyecto es del grupo 18 integrado por:
+Dirección de la página: https://dragon2664.github.io/cac-tikibar/
 
 * Pablo Faggionato
 * Claudio Rubén Miranda

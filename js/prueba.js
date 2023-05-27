@@ -1,4 +1,5 @@
 
+
 /*   de aqui para abajo, hasta el siguiente llamado, es la codificacion para mi arreglo json*/
 
 const miurl = 'https://dragon2664.github.io/cac-tikibar/js/tragos.json';
@@ -22,9 +23,12 @@ const app = new Vue({
           return trago;
         })
 
+
+
       })
       .catch(error => {
         console.error('Error:', error);
       });
   }
 });
+
