@@ -133,13 +133,32 @@ nav ul li {
 
 
 /* select, card e img utilizadas para parametrizar imagenes y textos de la pagina recetas */
-select,label,button{
-    margin: 10px ;
-}
 .card{
     width: 300px;
     margin:10px 0;
 }
+.card-with-scroll {
+    /* Esta clase hace que pueda agregarse una barra de desplazamiento lateral a cada "card" 
+    ya que los textos son algo extensos y quedaba feo a la vista las diferencias de tamaño
+    overflow agrega las barras, overflow-x en hidden oculta la inferior, que no la necesito
+    max-height define la altura maxima de la tarjeta*/
+    overflow: auto; 
+    overflow-x: hidden; 
+    max-height: 400px; 
+}
+.card-with-scroll::-webkit-scrollbar {
+    /* esta propiedad define el ancho de la barra de desplazamiento de las tarjetas
+    funciona perfectamente en el chrome, nofunciona en el firefox, Falta probar
+    si pasa lo mismo en otros navegadores*/
+    width: 7px; 
+}
+.card-with-scroll::-webkit-scrollbar-thumb {
+    /* Esta propiedad define el color de la barra de desplazamiento de las tarjetas
+    pasa lo mismo que en la clase anterior, funciona en chrome pero no en el firefox
+    falta probar en otros navegadores */
+    background-color: hsl(135, 50%, 52%);
+}
+
 img{
     width: 300px;
     height: 300px;
