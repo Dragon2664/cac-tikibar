@@ -155,4 +155,16 @@ img{
     margin-right: 5px;
   }
 
-
+/* Estilo para el form, campo email, asi se pone en verde cuando es valido y en rojo mientras es incorrecto*/ 
+.input-email {
+    border: 1px solid;
+    transition: border-color 0.3s;
+  }
+  
+  .input-email.valid {
+    border-color: green;
+  }
+  
+  .input-email.invalid {
+    border-color: red;
+  }

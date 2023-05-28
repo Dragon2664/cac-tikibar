@@ -5,31 +5,116 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Libro de visitas</title>
-    <link   rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <link rel="stylesheet" href="./css/estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
 
     <!-- el link de abajo es para insertar un icono en la solapa del navegador -->
     <link rel="icon" type="image/x-icon" href="./images/favico.ico">
 
+    <title>Libro de visitas y sugerencias</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <style> legend {font-family: 'Fasthand', cursive; font-size: large;} </style>
 </head>
-<body class="">
-    <header> 
-        <div id="header"></div>
-    </header>
-    <br>
-    <br><br>
-</body>
+
+<body class="colorfondopag">
+    <header>  <div id="header"></div> </header>
+    <h2>Registro de Visitas y sugerencias</h2>
+
+    <form action="show-data.html" target="_blank" id="okemail">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="firstname">Nombre: </label>
+            <input size="30" type="text" name="firstname" placeholder="Ingrese su nombre.">
+            <label for="lastname">Apellido:</label>
+            <input size="30" type="text" name="lastname" placeholder="Ingrese su apellido">
+            <br><br>
+            <label for="street">Direccion:</label>
+            <input type="text" name="address" placeholder="Ingrese su direccion">
+            <label for="city">Ciudad: </label>
+            <input type="text" name="city" value=""placeholder="Ingrese su dirección ">
+            <br><br>
+            <label for="zipcode">Código Postal:</label>
+            <input type="text" name="zipcode" placeholder="Ingrese codigo postal">
+            <label for="telefono">Telefono: </label>
+            <input type="tel" name="telefono" placeholder="+54 (11) 9999-9999">
+            <br><br>
+            <label for="fnac">Fecha Nac.(mm/dd/yyyy): </label>
+            <input type="date" name="birthdate">
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero">
+                <option value="Hombre">Hombre</option>
+                <option value="Mujer">Mujer</option>
+                <option value="Otro">Otro</option>
+
+            </select>
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Si desea, contestando esta breve encuenta nos ayuda a superarnos:</legend>
+            <p>Bartender
+                <input type="radio" name="bartender" value="MB"> Muy Bueno
+                <input type="radio" name="bartender" value="B" checked> Bueno
+                <input type="radio" name="bartender" value="R"> Regular
+                <input type="radio" name="bartender" value="M"> Seguro puede superarse
+            </p>
+            <p>Camareras
+                <input type="radio" name="camareras" value="MB"> Muy Buena atención
+                <input type="radio" name="camareras" value="B" checked> Buena atención
+                <input type="radio" name="camareras" value="R"> Atencion reguar
+                <input type="radio" name="camareras" value="M"> Seguro se puede mejorar
+            </p>
+            <p>Ambientación
+                <input type="radio" name="local" value="MB"> Muy Buena 
+                <input type="radio" name="local" value="B" checked> Buena 
+                <input type="radio" name="local" value="R"> Reguar
+                <input type="radio" name="local" value="M"> Abria que hacer algunas reformas
+            </p>
+            <p>Música
+                <input type="radio" name="music" value="MB"> Muy Buena
+                <input type="radio" name="music" value="B" checked> Buena
+                <input type="radio" name="music" value="R"> Regular
+                <input type="radio" name="music" value="M"> Se ceberia cambiar de estilo
+            </p>
+
+        </fieldset>
+        <fieldset>
+            <legend>Deseo me envíen información de:</legend>
+            <input type="checkbox" name="news" value="Nuevos Tragos"> Tragos
+            <input type="checkbox" name="news" value="Promociones"> Promociones
+            <input type="checkbox" name="news" value="Eventos"> Eventos
+            <input type="checkbox" name="news" value="Concursos y sorteos"> Concuros y Sorteos
+            <input type="checkbox" name="news" value="Serfers News"> Serfers News
+            <p>
+                <label for="jsokemail">Enviar información a:</label>
+                <input size="50" type="text" id="jsokemail" name="emailcli" 
+                placeholder="Ingresar dirección de email" class="input-email">
+            </p>
+        </fieldset>
 
 
+        <br>
+        <label for="comentarios">Si desea dejarnos alguna sugerencia, puede hacerlo en el siguiente espacio:</label> 
+        <br>
+        <textarea name="comentarios" rows="5" cols="90" placeholder="Ingrese su comentario"></textarea>
+        <br><br>
+        <input type="submit" value="Enviar">
+        <button type="reset">Reset</button>
+    </form>
 
-    <h1>Libro de visitas y sugerencias</h1>
 
-    
     <footer>
         <div id="footer"></div>
     </footer>
     <script src="./js/cabpie.js"></script>
-
+    <script src="./js/main.js"></script>
 </body>
+
 </html>

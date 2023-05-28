@@ -28,3 +28,26 @@ const app = new Vue({
       });
   }
 });
+
+/* De aqui para abajo, hasta el siguiente llamado, es la codificacion para validar direcciones de emails*/
+
+const emailInput = document.getElementById('jsokemail');
+
+// Agregar un event listener al campo de entrada para la validación
+emailInput.addEventListener('input', function() {
+  const email = emailInput.value;
+
+  // Expresión regular para validar el formato del correo electrónico
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  // Verificar si el correo electrónico cumple con el formato
+  if (emailRegex.test(email)) {
+    // El correo electrónico es válido
+    emailInput.classList.remove('invalid');
+    emailInput.classList.add('valid');
+  } else {
+    // El correo electrónico no es válido
+    emailInput.classList.remove('valid');
+    emailInput.classList.add('invalid');
+  }
+});
