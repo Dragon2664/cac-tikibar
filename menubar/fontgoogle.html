@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libro de visitas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body >
+
+        <fieldset>
+            <legend>Deseo me envíen información de:</legend>
+            <input type="checkbox" name="news" value="Nuevos Tragos"> Tragos
+            <input type="checkbox" name="news" value="Promociones"> Promociones
+            <input type="checkbox" name="news" value="Eventos"> Eventos
+            <input type="checkbox" name="news" value="Concursos y sorteos"> Concuros y Sorteos
+            <input type="checkbox" name="news" value="Serfers News"> Serfers News
+            <p>
+                <label for="jsokemail">Enviar información a:</label>
+                <input size="50" type="text" id="jsokemail" name="emailcli" 
+                placeholder="Ingresar dirección de email" class="input-email">
+            </p>
+        </fieldset>
+
+
+        <br>
+        <label for="comentarios">Si desea dejarnos alguna sugerencia, puede hacerlo en el siguiente espacio:</label> 
+        <br>
+        <textarea name="comentarios" rows="5" cols="90" placeholder="Ingrese su comentario"></textarea>
+        <br><br>
+        <input type="submit" value="Enviar">
+        <button type="reset">Reset</button>
+    </form>
+
+
+    <footer>
+        <div id="footer"></div>
+    </footer>
+    <script src="./js/cabpie.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

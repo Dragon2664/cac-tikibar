@@ -1,10 +1,18 @@
 /* Linea para la animación que usa animate.style como referencia  
-la que empieza con .referencia es para una parametrizacion, 
-la que empieza con .root es para todas las animaciones del diseño
+la que empieza con .referencia es para una parametrizacion, la que empieza
+con .root es para todas las animaciones del diseño
 */
 
 .tiempo {
     --animate-duration: 50s;
+}
+
+/* seteo de las iconos que hacen referecia a las redes sociales*/
+.icoredsoc {
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+    height: 50px;
 }
 
 /* las siguientes lineas es para hacer un menu responsive */
@@ -14,10 +22,6 @@ nav {
     color: #fff;
     display: flex;
     justify-content: center;
-    position: fixed; 
-    top: 0; 
-    z-index: 9999;
-
 }
   
 nav ul {
@@ -56,209 +60,65 @@ nav ul li {
     }
 }
 
+/* parametros para los datos de la cabecera de la web */
 
-
-/* Parametros para los datos de la cabecera de la web */
-
-
-.contenedorHeader {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: space-between;
-    background-image: url("../images/serfer1atardecer.webp");
+/* imágen de la cabecera */
+.imgcabecera {
+    background-image: url("/cac-tikibar/images/serfer1atardecer.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width:auto;
-    margin-top: 70px;
-    height: 50vh auto;
-    
-  }
+    width: 100vw;
+    height: 80vh;
 
-  @media (max-width: 768px) {
-    .contenedorHeader {
-      
-      width: 100vw;
-      height: 40vh;
-      
-   
-  }
-}
-  
-  .contieneCab {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-
-  }
-
-  .columna {
-    flex-basis: 50%; 
-    box-sizing: border-box; 
 }
 
-  .logo {
-    width: 100%;
-    text-align: center
-  }
-
-  .logo img {
-    max-width: 100%;
-    height: auto;
+.superpuesta {
+    background-image: url("/cac-tikibar/images/Logo.jpg");
+    background-repeat: no-repeat;
+    position: absolute;
+    /* margin define: top - right - botton - left */
+    margin: 50px 0px 0px 15px ;
+    opacity: 1;
+    max-width: 50vw;
+    width: 20% ;
+    height: 40% ;
 }
 
-.lasletras {
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
-  text-align: left;
-  color: rgb(255, 255, 255);
-   
+
+.superpuesta_Oritinal {
+    position: absolute; /* queda fija en ese lugar dentro de la pag*/
+    padding: 6%;
+    top: 40%;
+    left: 17%;
+    opacity: 1; /* para ajustar la transparencia de la imagen superpuesta */
+    transform: translate(-50%, -50%);
+    max-width: 30%; 
+    height: auto; /* Permite que la altura se ajuste automáticamente en proporción */
+
 }
 
-h1 {
-  font-size: 2em;
-  }
 
-.marca {
-  font-size: 2em;
+.txtsuperpuesto, .titu1, .titu2{
+    display: inline-block;
+    position: absolute; 
+    color: yellowgreen;
+    margin-top: 20px;
+
+    bottom: 0;
+    opacity: 1; 
 }
-.subtitulos{
-  font-size: 1.5em;
+.titu1 {
+    right: 1%;
+    padding: 10%;
+    font-size: 70px;
+
 }
-
-  
-
-  @media (max-width: 768px) {
-    .columna {
-        flex-basis: 100%; 
-    }
-
-    .logo img {
-      max-width:60%;
-    }
-}
-  
+.titu3 {
+    right: 2%;
+    padding: 0%;
  
-  .contenedor-menu {
-    display: flex;
-    flex-direction: row;
-    margin-top: auto;
-    width: 100%;
-    max-height: 100%;
-
-    
-  }
-  
-  .menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-  }
-  
-  .menu li {
-    margin: 10px 0;
-  }
-  
- 
-  /* ----------   color de fondo de la pagina ---------*/
-  .colorfondopag {
-    background-color: #e19a24;
-  }
-
-/*  eof aca termina la cabecera*/
-
-/* Estilos para el pie de pagina */
-
-.columnasPie {
-  text-align: center; 
 }
-
-.lista-horizontal {
-  display: flex; 
-  justify-content: center; 
-  padding: 0;
-}
-
-.lista-horizontal li {
-  margin-right: 20px; 
-}
-
-@media screen and (max-width: 768px) {
-  .columnasPie {
-    text-align: left; 
-  }
-}
-
-
-/* **************************aca empieza el index */
-.inicio{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-h2 {
-  font-size: 1em;
-}
-
-
-h2.tituloInicio {
-  font-size: 2.5em;
-}
-
-.contenCentral{
-display: flex;
-flex-direction: row;
-max-width: 80%;
-
-}
-
-.textoPrincipal{
-background-color: #bc74007a;
-padding: 2em;
-font-size: 1.2em;}
-
-.imagenCentral{
-
-  width: 20%;
-  height: 100%;
-
-}
-
-.imagenCentral img{
-
-  height: 100%;
-}
-
-
-@media (max-width: 768px) {
-  .contenCentral {
-    flex-direction: column;
-  }
-
-  .imagenCentral {
-    width: 100%;
-    height: auto;
-    text-align: center;
-  }
-}
-
-/* *********aca termina el index */
-
-
-/* en parraT2 tengo el texto de las paginas en color fonde verde y el tamaño en 16px*/
-.parraT3 {
-  font-family: Tahoma;
-  font-size: 20px;
-  color: #0c0c0b;
-}
-
 /* en parraT2 tengo el texto de las paginas en color fonde verde y el tamaño en 16px*/
 .parraT2 {
     font-family: Tahoma;
@@ -271,13 +131,13 @@ media querry para que sea responsive*/
 
 .grid-mapa {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho por defecto */
   }
   
- 
+  /* Media query para pantallas más pequeñas */
   @media screen and (max-width: 768px) {
     .grid-mapa {
-      grid-template-columns: 1fr; 
+      grid-template-columns: 1fr; /* Una sola columna */
     }
 }
 
@@ -297,11 +157,11 @@ que se usa una imágen y el texto esta a la derecha*/
 
 .grid-qr {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 20px; 
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho por defecto */
+    gap: 20px; /*Esto lo uso para el espacioado entre el texto y la imagen */
   }
   
-  
+  /* Media query para pantallas más pequeñas */
   @media screen and (max-width: 768px) {
     .grid-qr {
       grid-template-columns: auto 1fr; 
@@ -310,8 +170,8 @@ que se usa una imágen y el texto esta a la derecha*/
 }
 
 #img-qr {
-    max-width: 100%; 
-    max-height: 500px; 
+    max-width: 100%; /* Tamaño máximo del iframe */
+    max-height: 500px; /* Altura máxima del iframe */
     max-width: 340px%;
     height: auto;
     margin: 0 auto;
@@ -376,8 +236,7 @@ img{
     margin-right: 5px;
   }
 
-/* Estilo para el form, campo email, asi se pone en verde cuando es valido 
-y en rojo mientras es incorrecto*/ 
+/* Estilo para el form, campo email, asi se pone en verde cuando es valido y en rojo mientras es incorrecto*/ 
 .input-email {
     border: 1px solid;
     transition: border-color 0.3s;

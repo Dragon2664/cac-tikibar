@@ -29,25 +29,23 @@ const app = new Vue({
   }
 });
 
-/* De aqui para abajo, hasta el siguiente llamado, es la codificacion para validar direcciones de emails*/
+/* codificación para validad un email (formulario libro de visitas) */
 
-const emailInput = document.getElementById('jsokemail');
+const emailInput = document.getElementById('email');
+const mensajeEmail = document.getElementById("mensajeEmail");
+const expRegular = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
 
-// Agregar un event listener al campo de entrada para la validación
-emailInput.addEventListener('input', function() {
-  const email = emailInput.value;
+// Event listener al campo de entrada para la validación
 
-  // Expresión regular para validar el formato del correo electrónico
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  // Verificar si el correo electrónico cumple con el formato
-  if (emailRegex.test(email)) {
-    // El correo electrónico es válido
-    emailInput.classList.remove('invalid');
-    emailInput.classList.add('valid');
-  } else {
-    // El correo electrónico no es válido
-    emailInput.classList.remove('valid');
-    emailInput.classList.add('invalid');
+function validarEmail() {
+  if (!expRegular.test(emailInput.value)) {
+      mensajeEmail.innerHTML = "<div style='color:red; font-weight: bold;'>El email no es valido<div>";
+      
   }
-});
+  else {
+      mensajeEmail.innerHTML = "<div></div>";
+  }
+}
+
+emailInput.addEventListener("blur", validarEmail);

@@ -15,6 +15,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 
+    <script src="https://kit.fontawesome.com/e888912138.js" crossorigin="anonymous"></script>
+
     <!-- el link de abajo es para insertar un icono en la solapa del navegador -->
     <link rel="icon" type="image/x-icon" href="./images/favico.ico">
 
@@ -23,7 +25,7 @@
     <header>  <div id="header"></div> </header>
     <br> <br>
 
-    <h1>El Gran recetario de los tragos</h1>
+    <center> <h1 >El Gran recetario de los tragos</h1></center>
     <br><br>
     
         <div id="app">
@@ -50,7 +52,7 @@
                                 <li v-for="ingrediente in trago.ingredientes" :key="ingrediente.bebida">
                                     {{ ingrediente.bebida }}  <strong>{{ ingrediente.cantidad }}</strong> 
                                 </li>
-                            </Sul>
+                            </ul>
                             <h4 class="card-text">Como prepararlo:</h4>
                             <p class="card-text">{{ trago.preparacion }}</p>
                         </div>

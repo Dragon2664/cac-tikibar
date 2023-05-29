@@ -17,6 +17,8 @@
     <!-- el link de abajo es para insertar un icono en la solapa del navegador -->
     <link rel="icon" type="image/x-icon" href="./images/favico.ico">
 
+    <script src="https://kit.fontawesome.com/e888912138.js" crossorigin="anonymous"></script>
+
     <title>Libro de visitas y sugerencias</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <style> legend {font-family: 'Fasthand', cursive; font-size: large;} </style>
@@ -92,9 +94,10 @@
             <input type="checkbox" name="news" value="Concursos y sorteos"> Concuros y Sorteos
             <input type="checkbox" name="news" value="Serfers News"> Serfers News
             <p>
-                <label for="jsokemail">Enviar información a:</label>
-                <input size="50" type="text" id="jsokemail" name="emailcli" 
-                placeholder="Ingresar dirección de email" class="input-email">
+                <label for="email">Enviar información a:</label>
+                <input size="50" type="text" id="email" name="email" 
+                placeholder="Ingresar dirección de email" >
+                <div id = "mensajeEmail" ></div> 
             </p>
         </fieldset>
 
@@ -104,7 +107,7 @@
         <br>
         <textarea name="comentarios" rows="5" cols="90" placeholder="Ingrese su comentario"></textarea>
         <br><br>
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Enviar" id="enviar" name="enviar">
         <button type="reset">Reset</button>
     </form>
 
