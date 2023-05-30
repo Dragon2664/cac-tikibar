@@ -7,56 +7,6 @@ la que empieza con .root es para todas las animaciones del diseño
     --animate-duration: 50s;
 }
 
-/* las siguientes lineas es para hacer un menu responsive */
-
-nav {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    position: fixed; 
-    top: 0; 
-    z-index: 9999;
-
-}
-  
-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-  
-nav ul li {
-    flex-grow: 1;
-    margin: 0;
-}
-  
-  nav ul li a {
-    box-sizing: border-box;
-    display: block;
-    height: 50px;
-    line-height: 50px;
-    padding: 0 20px;
-    text-decoration: none;
-    color: #fff;
-    text-align: center;
-}
-  
-@media only screen and (max-width: 768px) {
-    nav ul li {
-      width: 100%;
-    }
-  
-    nav ul li a {
-      padding: 10;
-      font-size: 45x;
-    }
-}
-
-
 
 /* Parametros para los datos de la cabecera de la web */
 
@@ -71,7 +21,7 @@ nav ul li {
     background-size: cover;
     background-position: center;
     width:auto;
-    margin-top: 70px;
+    margin-top: 5px;
     height: 50vh auto;
     
   }
@@ -142,7 +92,7 @@ h1 {
     }
 }
   
- 
+ /*
   .contenedor-menu {
     display: flex;
     flex-direction: row;
@@ -152,25 +102,21 @@ h1 {
 
     
   }
-  
-  .menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-  }
-  
-  .menu li {
-    margin: 10px 0;
-  }
-  
- 
-  /* ----------   color de fondo de la pagina ---------*/
-  .colorfondopag {
-    background-color: #e19a24;
-  }
+  */
 
-/*  eof aca termina la cabecera*/
+.contenedor-menu {
+  background-size: cover;
+  min-height: 10vh;
+
+}
+  
+
+/* ----------   color de fondo de la pagina ---------*/
+.colorfondopag {
+  background-color: #e19a24;
+}
+
+
 
 /* Estilos para el pie de pagina */
 
@@ -195,7 +141,7 @@ h1 {
 }
 
 
-/* **************************aca empieza el index */
+/*------------- aca empieza el index ----------- */
 .inicio{
   display: flex;
   flex-direction: column;
@@ -213,16 +159,17 @@ h2.tituloInicio {
 }
 
 .contenCentral{
-display: flex;
-flex-direction: row;
-max-width: 80%;
-
+  display: flex;
+  flex-direction: row;
+  max-width: 80%;
+  
 }
 
 .textoPrincipal{
-background-color: #bc74007a;
-padding: 2em;
-font-size: 1.2em;}
+  background-color: #bc74007a;
+  padding: 2em;
+  font-size: 1.2em;
+}
 
 .imagenCentral{
 
@@ -312,7 +259,7 @@ que se usa una imágen y el texto esta a la derecha*/
 #img-qr {
     max-width: 100%; 
     max-height: 500px; 
-    max-width: 340px%;
+    max-width: 340px;
     height: auto;
     margin: 0 auto;
     border: none; 
@@ -320,10 +267,6 @@ que se usa una imágen y el texto esta a la derecha*/
 
 
 
-/* color de fondo de la pagina */
-.colorfondopag {
-    background-color: #e19a24;
-}
 
 /* todos los parrafos del site estan pensadas con fondo naranja palido, y parametricé
 las letras de los parrafos simples con un color que contrasta*/
@@ -376,17 +319,5 @@ img{
     margin-right: 5px;
   }
 
-/* Estilo para el form, campo email, asi se pone en verde cuando es valido 
-y en rojo mientras es incorrecto*/ 
-.input-email {
-    border: 1px solid;
-    transition: border-color 0.3s;
-  }
-  
-  .input-email.valid {
-    border-color: green;
-  }
-  
-  .input-email.invalid {
-    border-color: red;
-  }
+
+
